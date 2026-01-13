@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.max-width{
+     max-width: 1140px;
+     margin: 0 auto;
+}
+
+header{
+    background-color:rgba(255, 144, 14, 0.1);
+}
+
+.flex{
+    display: flex;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3{
+    font-size: 2rem;
+    /* font-weight: 700; */
+}
+
+nav ul{
+    /* gap: 40px; */
+}
+
+nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #424242;
+}
+
+.text-banner{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+    /* border: 1px solid darkblue; */
+}
+
+.text-banner h1{
+    font-size: 4rem;
+}
+
+
+p {
+    color: #727272;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.btn{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding:15px 20px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 20px 0 30px 0;
+}
+
+.img-banner img{
+    /* margin-top: 20px; */
+    width: 100%;
+}
+
+.Features-container {
+    margin-top: 80px;
+    gap: 40px;
+}
+
+.Features-img{
+     /* width: 50%; */
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;
+}
+
+.Features-img img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.Features-text{
+    max-width: 500px;
+    margin: 0 auto;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    margin-top: 80px;
+}
+
+.Features-text h2{
+    font-size: 45px;
+}
+
+.Features-text .list{
+    font-weight: 500;
+    color: #727272;
+}
+
+.Features-text .yellow{
+    color: #FF900E;
+}
+
+/* responsive media styles */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    nav{
+        justify-content: space-around;
+    }
+
+        .text-banner h1{
+    font-size: 3rem;
+}
+
+.flex{
+    flex-direction: column;
+}
+
+.Features-text{
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width:576px){
+       .flex{
+         flex-direction: column;
+       }
+       nav ul{
+        gap: 10px;
+       }
+
+       .text-banner h1{
+    font-size: 2rem;
+}
+ 
+p {
+    padding: 0 10px 0 10px;
+    line-height: 20px;
+}
+
+.btn{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+}
+
+}
